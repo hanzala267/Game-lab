@@ -1,0 +1,16 @@
+
+
+@media (max-width: 767px) {
+    .icons {
+      display: none;
+    }
+  }
+
+  .blurredContainer {
+    /* Set a backdrop-filter with blur effect */
+    backdrop-filter: blur(8px);
+    /* Add a background color with some transparency for the blur effect to show */
+    background-color: rgba(255, 255, 255, 0.5);
+    /* Add padding and margin as needed for layout purposes */
+
+  }

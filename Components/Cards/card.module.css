@@ -1,0 +1,99 @@
+.card {
+    width: 25%; /* Display 4 cards in one row on big screens */
+    float: left;
+    box-sizing: border-box;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 2%;
+    background: rgba(17, 76, 176, 0.059);
+    box-shadow: 0 8px 32px 0 rgba(12, 18, 103, 0.112);
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 16px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    transform: scale(1);
+    /* Add transition to both the default and hover state */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  @media screen and (max-width: 767px) {
+    .card {
+      width: 100%; /* Display 1 card per row on small screens */
+      float: none;
+    }
+  }
+  
+
+.container{
+    display: flex;
+    flex-direction: column;
+}
+.icon1{
+    display: flex;
+    flex-direction: row;
+    scale: 1.6;
+}
+.down{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-items:flex-start;
+    margin-top: 40px;
+}
+
+.bottom{
+    width: 90%;
+}
+
+.left{
+    width: 90%;
+}
+
+.right{
+    display: flex;
+    flex-direction: row;
+}
+
+.count{
+    margin-top: 5px;
+    margin-left: -5px;
+    color:white;
+    font-size: 3vh;
+    
+}
+
+.custombutton {
+  background-color: rgba(1, 17, 33, 0.534);
+  color: white;
+  border: 1px solid rgba(229, 229, 229, 0.75);
+
+  border-radius: 5px;
+  padding: 8px 16px;
+  font-size: 16px;
+  transition: transform 0.3s, opacity 0.3s, border 0.1s;
+}
+
+.custombutton:hover {
+  opacity: 0.75;
+  border: 1px solid rgba(74, 105, 255, 0.947);
+}
+
+.custombutton:active {
+  transform: scale(0.98);
+  border: 1px solid #bec3c9;
+}
+
+.above{
+  color:aliceblue;
+}
+
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.4s ease, box-shadow 0.3s ease;
+}
+
+.image{
+    width: 100%;
+    height: 200px;
+}
